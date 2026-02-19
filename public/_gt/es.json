@@ -1,0 +1,217 @@
+{
+  "166661f94b300f5b": "Hecho",
+  "2538c2d97c9b5e23": "En curso",
+  "5c2b8cf5e2227ebe": {
+    "c": {
+      "c": [
+        {
+          "c": [
+            {
+              "c": "General Translation",
+              "i": 4,
+              "t": "span"
+            },
+            {
+              "c": "/",
+              "i": 5,
+              "t": "span"
+            },
+            {
+              "c": "Administrador de tareas",
+              "i": 6,
+              "t": "span"
+            }
+          ],
+          "i": 3,
+          "t": "div"
+        },
+        {
+          "c": [
+            {
+              "c": {
+                "c": {
+                  "i": 10,
+                  "t": "path"
+                },
+                "i": 9,
+                "t": "svg"
+              },
+              "d": {
+                "arl": "GitHub"
+              },
+              "i": 8,
+              "t": "a"
+            },
+            {
+              "i": 11,
+              "t": "LocaleSelector"
+            }
+          ],
+          "i": 7,
+          "t": "div"
+        }
+      ],
+      "i": 2,
+      "t": "div"
+    },
+    "i": 1,
+    "t": "header"
+  },
+  "5cca6431a743f09d": {
+    "c": {
+      "c": {
+        "c": [
+          {
+            "i": 4,
+            "k": "_gt_n_4",
+            "v": "n"
+          },
+          " tareas en total en todas las columnas"
+        ],
+        "i": 3,
+        "t": "p"
+      },
+      "i": 2,
+      "t": "div"
+    },
+    "i": 1,
+    "t": "div"
+  },
+  "685805a80e6f977e": "Tablero Kanban de tareas que demuestra la internacionalización con General Translation.",
+  "79988b2be136b16f": "Por hacer",
+  "9fa3cd9aaeaeafe2": "Gestor de tareas | General Translation",
+  "afd67017c0b244b2": {
+    "c": [
+      {
+        "c": [
+          {
+            "c": {
+              "i": 4,
+              "k": "_gt_value_4",
+              "v": "v"
+            },
+            "i": 3,
+            "t": "h3"
+          },
+          {
+            "c": {
+              "d": {
+                "b": {
+                  "high": "Alta",
+                  "low": "Baja",
+                  "medium": "Media"
+                },
+                "t": "b"
+              },
+              "i": 6,
+              "t": "Branch"
+            },
+            "i": 5,
+            "t": "span"
+          }
+        ],
+        "i": 2,
+        "t": "div"
+      },
+      {
+        "c": {
+          "i": 8,
+          "k": "_gt_value_8",
+          "v": "v"
+        },
+        "i": 7,
+        "t": "p"
+      },
+      {
+        "c": [
+          {
+            "c": {
+              "i": 11,
+              "k": "_gt_value_11",
+              "v": "v"
+            },
+            "i": 10,
+            "t": "span"
+          },
+          {
+            "c": [
+              "Vence ",
+              {
+                "i": 13,
+                "k": "_gt_date_13",
+                "v": "d"
+              }
+            ],
+            "i": 12,
+            "t": "span"
+          }
+        ],
+        "i": 9,
+        "t": "div"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "bf11e2c4a6c1b7e1": {
+    "c": [
+      {
+        "c": {
+          "i": 3,
+          "k": "_gt_value_3",
+          "v": "v"
+        },
+        "i": 2,
+        "t": "h2"
+      },
+      {
+        "c": {
+          "d": {
+            "b": {
+              "one": {
+                "c": [
+                  {
+                    "i": 7,
+                    "k": "_gt_n_7",
+                    "v": "n"
+                  },
+                  " tarea"
+                ],
+                "i": 6,
+                "t": "C6"
+              },
+              "other": {
+                "c": [
+                  {
+                    "i": 7,
+                    "k": "_gt_n_7",
+                    "v": "n"
+                  },
+                  " tareas"
+                ],
+                "i": 6,
+                "t": "C6"
+              }
+            },
+            "t": "p"
+          },
+          "i": 5,
+          "t": "Plural"
+        },
+        "i": 4,
+        "t": "span"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "d5c8f30d26c100ec": {
+    "c": {
+      "c": "Desarrollado con General Translation",
+      "i": 2,
+      "t": "div"
+    },
+    "i": 1,
+    "t": "footer"
+  }
+}
