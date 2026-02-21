@@ -1,6 +1,9 @@
 {
   "166661f94b300f5b": "Terminé",
   "2538c2d97c9b5e23": "En cours",
+  "29e474e3298739d8": "Mettez en place une indexation en texte intégral pour les articles de la base de connaissances.",
+  "2b72bc58d2fc5d76": "Migrer la table des préférences des utilisateurs vers le nouveau schéma.",
+  "4e71d5e843456632": "Audit du design system",
   "5c2b8cf5e2227ebe": {
     "c": {
       "c": [
@@ -77,9 +80,27 @@
     "i": 1,
     "t": "div"
   },
-  "685805a80e6f977e": "Un tableau de tâches de type Kanban démontrant les fonctionnalités d’internationalisation de General Translation.",
+  "6139ed11fb9ad5fd": "Construire l’assistant d’onboarding multi-étapes avec suivi de la progression.",
+  "685805a80e6f977e": "Un tableau de tâches Kanban démontrant l’internationalisation avec General Translation.",
   "79988b2be136b16f": "À faire",
+  "82f377000476a2c7": "Parcours d’onboarding des utilisateurs",
+  "9d9bd12db30cc1c9": "Optimisation du pipeline CI",
   "9fa3cd9aaeaeafe2": "Gestionnaire de tâches | General Translation",
+  "a19386882604c1f2": "Intégrez Sentry pour la surveillance des erreurs en temps réel et les alertes.",
+  "a777135d82d23166": "Intégration du suivi des erreurs",
+  "ac4994b5b28371df": {
+    "c": [
+      "Ceci est un exemple d'application créée avec ",
+      {
+        "c": "General Translation",
+        "i": 2,
+        "t": "a"
+      },
+      " pour illustrer l'internationalisation. Pas un vrai produit."
+    ],
+    "i": 1,
+    "t": "div"
+  },
   "afd67017c0b244b2": {
     "c": [
       {
@@ -153,6 +174,7 @@
     "i": 1,
     "t": "div"
   },
+  "b9b878a4e98b49af": "Implémenter un middleware de limitation de débit pour tous les endpoints publics de l’API.",
   "bf11e2c4a6c1b7e1": {
     "c": [
       {
@@ -205,13 +227,57 @@
     "i": 1,
     "t": "div"
   },
-  "d5c8f30d26c100ec": {
+  "cb696761559bfc52": "Auditez toutes les pages pour vérifier la conformité WCAG 2.1 niveau AA et corrigez les problèmes critiques.",
+  "ce4512ba66fb217e": "Réduisez les temps de build en parallélisant les suites de tests et en mettant en cache les dépendances.",
+  "d39e632044639db8": {
     "c": {
-      "c": "Construit avec General Translation",
+      "c": [
+        {
+          "c": [
+            "Construit avec ",
+            {
+              "c": "General Translation",
+              "i": 4,
+              "t": "a"
+            },
+            " et ",
+            {
+              "c": "Next.js",
+              "i": 5,
+              "t": "a"
+            }
+          ],
+          "i": 3,
+          "t": "span"
+        },
+        {
+          "c": [
+            "Stylisé avec ",
+            {
+              "c": "Tailwind CSS",
+              "i": 7,
+              "t": "a"
+            },
+            " — En savoir plus sur le ",
+            {
+              "c": "SEO multilingue",
+              "i": 8,
+              "t": "a"
+            }
+          ],
+          "i": 6,
+          "t": "span"
+        }
+      ],
       "i": 2,
       "t": "div"
     },
     "i": 1,
     "t": "footer"
-  }
+  },
+  "de3540e05a4e8089": "Revue d’accessibilité",
+  "e5652ec8a5c0f1d3": "Indexation de recherche",
+  "e7d189c66ca66766": "Passer en revue et documenter l’ensemble des design tokens, composants et patterns existants.",
+  "f1c3f678281c8de8": "Limitation du débit de l’API",
+  "f6d9f1b61fe5de1e": "Migration de base de données"
 }

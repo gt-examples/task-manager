@@ -12,80 +12,82 @@ type Task = {
   status: "todo" | "inProgress" | "done";
 };
 
-const tasks: Task[] = [
-  {
-    id: 1,
-    title: "Design system audit",
-    description: "Review and document all existing design tokens, components, and patterns.",
-    due: new Date("2026-03-01"),
-    assignee: "Alice",
-    priority: "high",
-    status: "todo",
-  },
-  {
-    id: 2,
-    title: "API rate limiting",
-    description: "Implement rate limiting middleware for all public API endpoints.",
-    due: new Date("2026-02-28"),
-    assignee: "Bob",
-    priority: "high",
-    status: "inProgress",
-  },
-  {
-    id: 3,
-    title: "User onboarding flow",
-    description: "Build the multi-step onboarding wizard with progress tracking.",
-    due: new Date("2026-03-05"),
-    assignee: "Carol",
-    priority: "medium",
-    status: "todo",
-  },
-  {
-    id: 4,
-    title: "Database migration",
-    description: "Migrate user preferences table to the new schema.",
-    due: new Date("2026-02-25"),
-    assignee: "Dave",
-    priority: "medium",
-    status: "inProgress",
-  },
-  {
-    id: 5,
-    title: "CI pipeline optimization",
-    description: "Reduce build times by parallelizing test suites and caching dependencies.",
-    due: new Date("2026-02-20"),
-    assignee: "Eve",
-    priority: "low",
-    status: "done",
-  },
-  {
-    id: 6,
-    title: "Accessibility review",
-    description: "Audit all pages for WCAG 2.1 AA compliance and fix critical issues.",
-    due: new Date("2026-03-10"),
-    assignee: "Alice",
-    priority: "high",
-    status: "todo",
-  },
-  {
-    id: 7,
-    title: "Search indexing",
-    description: "Set up full-text search indexing for the knowledge base articles.",
-    due: new Date("2026-02-22"),
-    assignee: "Bob",
-    priority: "low",
-    status: "done",
-  },
-  {
-    id: 8,
-    title: "Error tracking integration",
-    description: "Integrate Sentry for real-time error monitoring and alerting.",
-    due: new Date("2026-03-03"),
-    assignee: "Carol",
-    priority: "medium",
-    status: "inProgress",
-  },
-];
+function getTasks(t: (s: string) => string): Task[] {
+  return [
+    {
+      id: 1,
+      title: t("Design system audit"),
+      description: t("Review and document all existing design tokens, components, and patterns."),
+      due: new Date("2026-03-01"),
+      assignee: "Alice",
+      priority: "high",
+      status: "todo",
+    },
+    {
+      id: 2,
+      title: t("API rate limiting"),
+      description: t("Implement rate limiting middleware for all public API endpoints."),
+      due: new Date("2026-02-28"),
+      assignee: "Bob",
+      priority: "high",
+      status: "inProgress",
+    },
+    {
+      id: 3,
+      title: t("User onboarding flow"),
+      description: t("Build the multi-step onboarding wizard with progress tracking."),
+      due: new Date("2026-03-05"),
+      assignee: "Carol",
+      priority: "medium",
+      status: "todo",
+    },
+    {
+      id: 4,
+      title: t("Database migration"),
+      description: t("Migrate user preferences table to the new schema."),
+      due: new Date("2026-02-25"),
+      assignee: "Dave",
+      priority: "medium",
+      status: "inProgress",
+    },
+    {
+      id: 5,
+      title: t("CI pipeline optimization"),
+      description: t("Reduce build times by parallelizing test suites and caching dependencies."),
+      due: new Date("2026-02-20"),
+      assignee: "Eve",
+      priority: "low",
+      status: "done",
+    },
+    {
+      id: 6,
+      title: t("Accessibility review"),
+      description: t("Audit all pages for WCAG 2.1 AA compliance and fix critical issues."),
+      due: new Date("2026-03-10"),
+      assignee: "Alice",
+      priority: "high",
+      status: "todo",
+    },
+    {
+      id: 7,
+      title: t("Search indexing"),
+      description: t("Set up full-text search indexing for the knowledge base articles."),
+      due: new Date("2026-02-22"),
+      assignee: "Bob",
+      priority: "low",
+      status: "done",
+    },
+    {
+      id: 8,
+      title: t("Error tracking integration"),
+      description: t("Integrate Sentry for real-time error monitoring and alerting."),
+      due: new Date("2026-03-03"),
+      assignee: "Carol",
+      priority: "medium",
+      status: "inProgress",
+    },
+  ];
+}
 
 const columns = [
   { key: "todo" as const, labelId: "column-todo" },
@@ -136,6 +138,7 @@ function TaskCard({ task }: { task: Task }) {
 
 export default async function Page() {
   const t = await getGT();
+  const tasks = getTasks(t);
   const totalTasks = tasks.length;
 
   const columnLabels: Record<string, string> = {
@@ -146,6 +149,22 @@ export default async function Page() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Disclaimer */}
+      <T>
+        <div className="bg-neutral-900 border-b border-neutral-800 px-6 py-2 text-center text-xs text-neutral-500">
+          This is an example app built with{" "}
+          <a
+            href="https://generaltranslation.com"
+            className="text-neutral-400 underline hover:text-neutral-300"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            General Translation
+          </a>{" "}
+          to demonstrate internationalization. Not a real product.
+        </div>
+      </T>
+
       {/* Header */}
       <T>
         <header className="border-b border-neutral-800 px-6 py-4">
@@ -226,8 +245,19 @@ export default async function Page() {
       {/* Footer */}
       <T>
         <footer className="border-t border-neutral-800 px-6 py-4">
-          <div className="max-w-7xl mx-auto text-center text-xs text-neutral-600">
-            Built with General Translation
+          <div className="max-w-7xl mx-auto flex flex-col items-center gap-2 text-xs text-neutral-600">
+            <span>
+              Built with{" "}
+              <a href="https://generaltranslation.com" className="underline hover:text-neutral-400" target="_blank" rel="noopener noreferrer">General Translation</a>
+              {" "}and{" "}
+              <a href="https://nextjs.org" className="underline hover:text-neutral-400" target="_blank" rel="noopener noreferrer">Next.js</a>
+            </span>
+            <span>
+              Styled with{" "}
+              <a href="https://tailwindcss.com" className="underline hover:text-neutral-400" target="_blank" rel="noopener noreferrer">Tailwind CSS</a>
+              {" "} — Learn about{" "}
+              <a href="https://generaltranslation.com/en-US/blog/multilingual-nextjs-seo" className="underline hover:text-neutral-400" target="_blank" rel="noopener noreferrer">multilingual SEO</a>
+            </span>
           </div>
         </footer>
       </T>

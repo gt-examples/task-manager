@@ -1,6 +1,9 @@
 {
-  "166661f94b300f5b": "Hecho",
+  "166661f94b300f5b": "Listo",
   "2538c2d97c9b5e23": "En curso",
+  "29e474e3298739d8": "Configura la indexación de búsqueda de texto completo para los artículos de la base de conocimientos.",
+  "2b72bc58d2fc5d76": "Migrar la tabla de preferencias de usuario al nuevo esquema.",
+  "4e71d5e843456632": "Auditoría del sistema de diseño",
   "5c2b8cf5e2227ebe": {
     "c": {
       "c": [
@@ -77,9 +80,27 @@
     "i": 1,
     "t": "div"
   },
-  "685805a80e6f977e": "Tablero Kanban de tareas que demuestra la internacionalización con General Translation.",
-  "79988b2be136b16f": "Por hacer",
+  "6139ed11fb9ad5fd": "Crear el asistente de incorporación en varios pasos con indicador de progreso.",
+  "685805a80e6f977e": "Un tablero Kanban de tareas que demuestra la internacionalización con General Translation.",
+  "79988b2be136b16f": "Pendiente",
+  "82f377000476a2c7": "Flujo de incorporación de usuarios",
+  "9d9bd12db30cc1c9": "Optimización del pipeline de CI",
   "9fa3cd9aaeaeafe2": "Gestor de tareas | General Translation",
+  "a19386882604c1f2": "Integra Sentry para la monitorización de errores en tiempo real y el envío de alertas.",
+  "a777135d82d23166": "Integración con seguimiento de errores",
+  "ac4994b5b28371df": {
+    "c": [
+      "Esta es una aplicación de ejemplo creada con ",
+      {
+        "c": "General Translation",
+        "i": 2,
+        "t": "a"
+      },
+      " para demostrar la internacionalización. No es un producto real."
+    ],
+    "i": 1,
+    "t": "div"
+  },
   "afd67017c0b244b2": {
     "c": [
       {
@@ -153,6 +174,7 @@
     "i": 1,
     "t": "div"
   },
+  "b9b878a4e98b49af": "Implementar middleware de rate limiting para todos los endpoints públicos de la API.",
   "bf11e2c4a6c1b7e1": {
     "c": [
       {
@@ -205,13 +227,57 @@
     "i": 1,
     "t": "div"
   },
-  "d5c8f30d26c100ec": {
+  "cb696761559bfc52": "Audita todas las páginas para verificar el cumplimiento de WCAG 2.1 AA y corrige los problemas críticos.",
+  "ce4512ba66fb217e": "Reduce los tiempos de compilación paralelizando los conjuntos de pruebas y usando caché para las dependencias.",
+  "d39e632044639db8": {
     "c": {
-      "c": "Desarrollado con General Translation",
+      "c": [
+        {
+          "c": [
+            "Desarrollado con ",
+            {
+              "c": "General Translation",
+              "i": 4,
+              "t": "a"
+            },
+            " y ",
+            {
+              "c": "Next.js",
+              "i": 5,
+              "t": "a"
+            }
+          ],
+          "i": 3,
+          "t": "span"
+        },
+        {
+          "c": [
+            "Estilizado con ",
+            {
+              "c": "Tailwind CSS",
+              "i": 7,
+              "t": "a"
+            },
+            " — Aprende sobre ",
+            {
+              "c": "SEO multilingüe",
+              "i": 8,
+              "t": "a"
+            }
+          ],
+          "i": 6,
+          "t": "span"
+        }
+      ],
       "i": 2,
       "t": "div"
     },
     "i": 1,
     "t": "footer"
-  }
+  },
+  "de3540e05a4e8089": "Revisión de accesibilidad",
+  "e5652ec8a5c0f1d3": "Indexación para búsqueda",
+  "e7d189c66ca66766": "Revisar y documentar todos los design tokens, componentes y patrones existentes.",
+  "f1c3f678281c8de8": "Rate limiting de la API",
+  "f6d9f1b61fe5de1e": "Migración de base de datos"
 }
